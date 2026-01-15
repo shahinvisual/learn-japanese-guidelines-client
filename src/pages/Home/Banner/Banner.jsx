@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import bannerImg from "../../../assets/bannerImg.jpg"
+import bannerImg from "../../../assets/bannerImg.jpg";
 
 const Banner = () => {
     return (
@@ -9,8 +9,8 @@ const Banner = () => {
                 {/* Banner Card */}
                 <div className="bg-white shadow-lg rounded-xl p-6 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
-                    {/* Left Content */}
-                    <div className="space-y-4">
+                    {/* Left Content (Text) */}
+                    <div className="space-y-4 order-2 lg:order-1">
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
                             The Bridge to Your Japanese Success
                         </h1>
@@ -42,7 +42,7 @@ const Banner = () => {
                     </div>
 
                     {/* Right Image */}
-                    <div className="flex justify-center">
+                    <div className="flex justify-center order-1 lg:order-2">
                         <img
                             src={bannerImg}
                             alt="Learn Japanese"
